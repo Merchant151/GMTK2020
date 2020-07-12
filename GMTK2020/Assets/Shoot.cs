@@ -6,7 +6,7 @@ public class Shoot : MonoBehaviour
 {
     public enum Team { Ally, Enemy}
     public Team curTeam;
-    public int rateOfFire;
+    public float rateOfFire;
     public bool Rotateable;
     public float range;
     private GameObject currentTarget;
@@ -29,8 +29,8 @@ public class Shoot : MonoBehaviour
         {
             if (inRange(currentTarget))
             {
-                transform.LookAt(currentTarget.transform.position);
-                Debug.Log("Looking at opponent at "+ currentTarget.transform.position.x +","+ currentTarget.transform.position.y);
+                //transform.LookAt(currentTarget.transform.position);
+                //Debug.Log("Looking at opponent at "+ currentTarget.transform.position.x +","+ currentTarget.transform.position.y);
                 timeremaining -= Time.deltaTime;
                 if (timeremaining <= 0)
                 {
@@ -44,14 +44,14 @@ public class Shoot : MonoBehaviour
 
             }else
             {
-                transform.LookAt(gameObject.GetComponent<EnemyUnit>().curWP.transform.position);
-                Debug.Log("Opponent too far" + gameObject.GetComponent<EnemyUnit>().curWP.transform.position.x + "," + gameObject.GetComponent<EnemyUnit>().curWP.transform.position.y);
+                //transform.LookAt(gameObject.GetComponent<EnemyUnit>().curWP.transform.position);
+                //Debug.Log("Opponent too far" + gameObject.GetComponent<EnemyUnit>().curWP.transform.position.x + "," + gameObject.GetComponent<EnemyUnit>().curWP.transform.position.y);
             }
         }
         else
         {
-            transform.LookAt(gameObject.GetComponent<EnemyUnit>().curWP.transform.position);
-            Debug.Log("Looking at waypoint");
+            //transform.LookAt(gameObject.GetComponent<EnemyUnit>().curWP.transform.position);
+            //Debug.Log("Looking at waypoint");
         }
         
     }
@@ -73,7 +73,7 @@ public class Shoot : MonoBehaviour
         if (curTeam == Team.Ally)
         {
             target = GameObject.FindGameObjectsWithTag("Enemy");
-            if (target != null)
+            if (target.Length > 0)
             {
                 closest = target[0];
                 float var2 = Vector3.Distance(closest.transform.position, gameObject.transform.position);
@@ -91,7 +91,7 @@ public class Shoot : MonoBehaviour
         }else
         {
             target = GameObject.FindGameObjectsWithTag("Ally");
-            if (target != null)
+            if (target.Length>0)
             {
                 closest = target[0];
                 float var2 = Vector3.Distance(closest.transform.position, gameObject.transform.position);

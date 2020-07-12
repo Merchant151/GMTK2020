@@ -13,9 +13,12 @@ GameObject:
   - component: {fileID: 5391490488632357170}
   - component: {fileID: 6693243214701906546}
   - component: {fileID: -8670619519818841247}
+  - component: {fileID: 6483111910442656448}
+  - component: {fileID: 608204984936775785}
+  - component: {fileID: -7312066417469009648}
   m_Layer: 0
   m_Name: enemy_ufoGreen
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -108,3 +111,48 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.99999994, y: 0.65287226, z: 0.99999994}
   m_Center: {x: 0, y: 0.32643613, z: 0}
+--- !u!114 &6483111910442656448
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5895933709642338535}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f544501437ea4a5429013ed08de725e4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 0
+  curWP: {fileID: 0}
+--- !u!114 &608204984936775785
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5895933709642338535}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6af4e7b95242ab41bf345f635daf186, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  curTeam: 1
+  rateOfFire: 1
+  Rotateable: 1
+  range: 4
+  bulletType: {fileID: 6480162512176184085, guid: 549f3bbfa4ec4e2439f6bc3e91e858df,
+    type: 3}
+--- !u!114 &-7312066417469009648
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5895933709642338535}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a4851ff529d905469b03194d4e593a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 5

@@ -8,6 +8,8 @@ public class bullet : MonoBehaviour
     public float speed;
 
     private GameObject target;
+
+    public int damage;
     
     public void Setup(Vector3 direction, GameObject target)
     {
@@ -19,11 +21,17 @@ public class bullet : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        float range = 2f;
-        transform.Translate(direction * speed * Time.deltaTime, Space.World);
-        if (Vector3.Distance(gameObject.transform.position , target.transform.position) < range)
+        direction = Vector3.Scale(direction , new Vector3(1,1,0));
+        float range = 0.5f;
+        transform.Translate(direction * speed * Time.deltaTime , Space.World);
+        if (target != null)
         {
-            Destroy(gameObject);
-        } 
+            if (Vector3.Distance(gameObject.transform.position, target.transform.position) < range)
+            {
+                Debug.Log("hit target:"+target.name);
+                target.GetComponent<unitStats>().doDam(damage);
+                Destroy(gameObject);
+            }
+        }
     }
 }

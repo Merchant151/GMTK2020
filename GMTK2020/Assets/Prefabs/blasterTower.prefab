@@ -9,9 +9,11 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8395418721604078318}
+  - component: {fileID: -1761392943372299585}
+  - component: {fileID: 8786241738614458567}
   m_Layer: 0
   m_Name: blasterTower
-  m_TagString: Untagged
+  m_TagString: Ally
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -34,6 +36,37 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &-1761392943372299585
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8395418721604078317}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a4851ff529d905469b03194d4e593a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 100
+--- !u!114 &8786241738614458567
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8395418721604078317}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6af4e7b95242ab41bf345f635daf186, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  curTeam: 0
+  rateOfFire: 1
+  Rotateable: 0
+  range: 5
+  bulletType: {fileID: 4903104847508334478, guid: d231be15afd7d5a4aaba3964cc24b684,
+    type: 3}
 --- !u!1001 &8395418720902502544
 PrefabInstance:
   m_ObjectHideFlags: 0
