@@ -14,7 +14,7 @@ public class bullet : MonoBehaviour
     public void Setup(Vector3 direction, GameObject target)
     {
         this.direction = direction;
-        Destroy(gameObject, 2f);
+        Destroy(gameObject, 1f);
         this.target = target;
     }       
 
