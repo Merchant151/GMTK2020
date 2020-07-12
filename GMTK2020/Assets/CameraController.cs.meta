@@ -3,7 +3,11 @@ guid: 591c3bb9513f85d4dbfa9524496b45a0
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - testTower: {fileID: 4839876767559338636, guid: 8b4832a8ae7f8f84ba556b373eb727b2,
+      type: 3}
+  - spawnpoint: {fileID: 4463405237527231293, guid: 81da5c1302f15294d9be79ab5a0209fd,
+      type: 3}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
