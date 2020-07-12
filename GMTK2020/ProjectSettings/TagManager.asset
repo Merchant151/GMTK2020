@@ -4,12 +4,9 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - Path
-  - Grass
-  - PlayerHP
+  - Waypoint
+  - Ally
   - Enemy
-  - AllyUnit
-  - Tower
   layers:
   - Default
   - TransparentFX
