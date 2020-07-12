@@ -10,6 +10,7 @@ TagManager:
   - Enemy
   - AllyUnit
   - Tower
+  - EnemySpawn
   layers:
   - Default
   - TransparentFX
