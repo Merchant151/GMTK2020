@@ -16,6 +16,8 @@ GameObject:
   - component: {fileID: 6483111910442656448}
   - component: {fileID: 608204984936775785}
   - component: {fileID: -7312066417469009648}
+  - component: {fileID: 6537143879166850274}
+  - component: {fileID: -7170978246325370902}
   m_Layer: 0
   m_Name: enemy_ufoGreen
   m_TagString: Enemy
@@ -156,3 +158,27 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 5
+--- !u!114 &6537143879166850274
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5895933709642338535}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd9ddf541c894a145a334ce6a39a73b2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &-7170978246325370902
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5895933709642338535}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 609dc41b3f07b974398b223879dfccf6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

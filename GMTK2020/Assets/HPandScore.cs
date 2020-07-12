@@ -18,7 +18,7 @@ public class HPandScore : MonoBehaviour
         tracking = GameObject.Find("towerRound_crystals").GetComponent<HPController>();
         scoretext = GameObject.Find("Score").GetComponent<Text>();
         gameovertext = GameObject.Find("GameOver").GetComponent<Text>();
-        gameovertext.enabled = false;
+        //gameovertext.enabled = false;
         score = 0;
     }
 
@@ -41,6 +41,8 @@ public class HPandScore : MonoBehaviour
             gameovertext.enabled = true;
             Time.timeScale = 0;
         }
+
+        score = tracking.score;
     }
 
     public void AddScore(int add)
